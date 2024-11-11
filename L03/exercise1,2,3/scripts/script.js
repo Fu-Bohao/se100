@@ -84,7 +84,9 @@ const stockOHLC = {
 
 // Write your code below
 if (stockOHLC["open"] > stockOHLC["close"]) {
-    console.log("Stock is bearish");
-} else if (stockOHLC["close"] > stockOHLC["open"]) {
-    console.log("Stock is bullish");
+    console.log("Stock is bearish")
+} else if (stockOHLC["open"] < stockOHLC["close"]) {
+    console.log("Stock is bullish")
+} else {
+    console.log("Stock is neutral")
 }
