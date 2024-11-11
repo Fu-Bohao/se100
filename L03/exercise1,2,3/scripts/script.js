@@ -13,7 +13,13 @@ money *= 3;
 console.log(money);
 
 //Ex4
-const companyName = "Amazon"
-const companyRating = 5
+const companyName1 = "Amazon";
+const companyRating = 5;
 
-console.log(`${companyName} has a customer satisfaction rating of ${companyRating}`)
+console.log(`${companyName1} has a customer satisfaction rating of ${companyRating}`);
+
+//Ex5
+const companyName2 = "Metaa";
+let slicedCompanyName = companyName2.substring(0, 4);
+console.log(slicedCompanyName);
+console.log(slicedCompanyName.toUpperCase());
