@@ -31,3 +31,11 @@ const DayTwoClosingPrice = "84.22";
 console.log((parseFloat(DayOneClosingPrice) + parseFloat(DayTwoClosingPrice)) / 2)
 
 //Ex7
+const TSLAClosingPrices = [230.12, 221.45, 225.61, 219.48, 227.52]
+
+let sum = 0;
+for (let i = 0; i < TSLAClosingPrices.length; i++) {
+    sum += TSLAClosingPrices[i];
+}
+average = sum / TSLAClosingPrices.length;
+console.log(average);
