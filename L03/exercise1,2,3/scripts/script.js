@@ -28,10 +28,10 @@ console.log(slicedCompanyName.toUpperCase());
 const DayOneClosingPrice = "87.14";
 const DayTwoClosingPrice = "84.22";
 
-console.log((parseFloat(DayOneClosingPrice) + parseFloat(DayTwoClosingPrice)) / 2)
+console.log((parseFloat(DayOneClosingPrice) + parseFloat(DayTwoClosingPrice)) / 2);
 
 //Ex7
-const TSLAClosingPrices = [230.12, 221.45, 225.61, 219.48, 227.52]
+const TSLAClosingPrices = [230.12, 221.45, 225.61, 219.48, 227.52];
 
 let sum = 0;
 for (let i = 0; i < TSLAClosingPrices.length; i++) {
@@ -39,3 +39,52 @@ for (let i = 0; i < TSLAClosingPrices.length; i++) {
 }
 average = sum / TSLAClosingPrices.length;
 console.log(average);
+
+
+//Ex8
+const AAPLCurrentBar = {
+    open: 81.12,
+    high: 82.59,
+    low: 80.09,
+    close: 84.71
+}
+
+const AAPLPrevBar = {
+    open: 81.02,
+    high: 82.49,
+    low: 79.09,
+    close: 83.71
+}
+
+// Write your code below
+console.log((AAPLPrevBar["open"] + AAPLPrevBar["close"]) / 2)
+console.log((AAPLCurrentBar["open"]
+    + AAPLCurrentBar["close"]
+    + AAPLCurrentBar["high"]
+    + AAPLCurrentBar["low"]) / 4)
+console.log(Math.max(
+    AAPLCurrentBar["high"],
+    AAPLCurrentBar["open"],
+    AAPLCurrentBar["close"]
+))
+console.log(Math.min(
+    AAPLCurrentBar["low"],
+    AAPLCurrentBar["open"],
+    AAPLCurrentBar["close"]
+))
+
+
+//Ex10
+const stockOHLC = {
+	open: 81.12,
+	high: 82.59,
+	low: 80.09,
+	close: 84.71,
+}
+
+// Write your code below
+if (stockOHLC["open"] > stockOHLC["close"]) {
+    console.log("Stock is bearish");
+} else if (stockOHLC["close"] > stockOHLC["open"]) {
+    console.log("Stock is bullish");
+}
