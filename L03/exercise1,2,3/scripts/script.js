@@ -23,3 +23,11 @@ const companyName2 = "Metaa";
 let slicedCompanyName = companyName2.substring(0, 4);
 console.log(slicedCompanyName);
 console.log(slicedCompanyName.toUpperCase());
+
+//Ex6
+const DayOneClosingPrice = "87.14";
+const DayTwoClosingPrice = "84.22";
+
+console.log((parseFloat(DayOneClosingPrice) + parseFloat(DayTwoClosingPrice)) / 2)
+
+//Ex7
